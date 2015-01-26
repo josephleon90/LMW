@@ -10,23 +10,18 @@ public class Product implements Serializable{
   private String id;
   private String description;
   private float price;
-  private boolean smallSize;
-  private boolean mediumSize;
-  private boolean largeSize;
-  private boolean extraLargeSize;
+  private String [] sizes;
+  private Integer [] colors;
   private String photoName;
 
   public Product(String id, String description, float price,
-                 boolean smallSize, boolean mediumSize, boolean largeSize,
-                 boolean extraLargeSize, String photoName) {
+                 String photoName, String [] sizes, Integer [] colors) {
     this.id = id;
     this.description = description;
     this.price = price;
-    this.smallSize = smallSize;
-    this.mediumSize = mediumSize;
-    this.largeSize = largeSize;
-    this.extraLargeSize = extraLargeSize;
     this.photoName = photoName;
+    this.sizes = sizes;
+    this.colors = colors;
   }
 
   public Product(){
@@ -56,43 +51,27 @@ public class Product implements Serializable{
     this.price = price;
   }
 
-  public boolean isSmallSize() {
-    return smallSize;
-  }
-
-  public void setSmallSize(boolean smallSize) {
-    this.smallSize = smallSize;
-  }
-
-  public boolean isMediumSize() {
-    return mediumSize;
-  }
-
-  public void setMediumSize(boolean mediumSize) {
-    this.mediumSize = mediumSize;
-  }
-
-  public boolean isLargeSize() {
-    return largeSize;
-  }
-
-  public void setLargeSize(boolean largeSize) {
-    this.largeSize = largeSize;
-  }
-
-  public boolean isExtraLargeSize() {
-    return extraLargeSize;
-  }
-
-  public void setExtraLargeSize(boolean extraLargeSize) {
-    this.extraLargeSize = extraLargeSize;
-  }
-
   public String getPhotoName() {
     return photoName;
   }
 
   public void setPhotoName(String photoName) {
     this.photoName = photoName;
+  }
+
+  public String[] getSizes() {
+    return sizes;
+  }
+
+  public void setSizes(String[] sizes) {
+    this.sizes = sizes;
+  }
+
+  public Integer[] getColors() {
+    return colors;
+  }
+
+  public void setColors(Integer[] colors) {
+    this.colors = colors;
   }
 }

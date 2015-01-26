@@ -7,20 +7,19 @@ import android.view.MenuItem;
 
 import com.lunarwolf.market.R;
 
-
-public class ProductDetailActivity extends ActionBarActivity {
+public class ShoppingCartActivity extends ActionBarActivity {
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
-    setContentView(R.layout.activity_product_detail);
+    setContentView(R.layout.activity_shopping_cart);
   }
 
 
   @Override
   public boolean onCreateOptionsMenu(Menu menu) {
     // Inflate the menu; this adds items to the action bar if it is present.
-    getMenuInflater().inflate(R.menu.menu_product_detail, menu);
+    getMenuInflater().inflate(R.menu.menu_shopping_cart, menu);
     return true;
   }
 

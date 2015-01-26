@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="white">#FFFFFF</color>
+    <color name="black">#ff000000</color>
+    <color name="red">#ffe8402f</color>
+    <color name="blue">#ff38a2ff</color>
+    <color name="blueApp">#ff0086ff</color>
+    <color name="blueDark">#ff2a5fd8</color>
+    <color name="blueLight">#ff2894ff</color>
 </resources>

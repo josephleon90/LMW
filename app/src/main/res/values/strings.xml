@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Market</string>
+    <string name="app_name">LunarWolf Market</string>
 
     <string-array name="productIds">
         <item>1</item>
@@ -9,60 +9,90 @@
         <item>3</item>
         <item>4</item>
     </string-array>
-
     <string-array name="productDes" formatted="false">
         <item>Camiseta 100% algodón semipeinado en punto liso, pre-econgido. Pigmentos ecológicos. 160gr/m2.</item>
         <item>Camiseta 50% algodón 50% Poliester semipeinado en punto liso,pre-econgido. Pigmentos ecológicos. 100gr/m2.</item>
         <item>Camiseta 100% pre-econgido. Pigmentos ecológicos. 90gr/m2</item>
         <item>Chompa 100% lana, pre-econgido.Pigmentos naturales. 160gr/m2.</item>
     </string-array>
-
     <string-array name="productPrices">
         <item>24.00</item>
         <item>22.00</item>
         <item>35.00</item>
         <item>20.00</item>
     </string-array>
-
     <string-array name="productSmallSizes">
         <item>true</item>
-        <item>false</item>
+        <item>true</item>
         <item>false</item>
         <item>true</item>
     </string-array>
-
     <string-array name="productMediumSizes">
         <item>true</item>
         <item>false</item>
         <item>false</item>
         <item>true</item>
     </string-array>
-
     <string-array name="productLargeSizes">
         <item>true</item>
         <item>false</item>
-        <item>false</item>
+        <item>true</item>
         <item>true</item>
     </string-array>
-
     <string-array name="productExtraLargeSizes">
         <item>true</item>
         <item>false</item>
         <item>false</item>
         <item>true</item>
     </string-array>
-
     <string-array name="productPhotoNames">
         <item>sample_0</item>
         <item>sample_1</item>
-        <item>sample_2</item>
+        <item>sample_7</item>
         <item>sample_3</item>
+        <item>sample_2</item>
+        <item>sample_4</item>
+        <item>sample_5</item>
+        <item>sample_6</item>
+        <item>sample_0</item>
+        <item>sample_1</item>
+        <item>sample_7</item>
+        <item>sample_3</item>
+    </string-array>
+    <string-array name="productBlack">
+        <item>true</item>
+        <item>true</item>
+        <item>true</item>
+        <item>true</item>
+    </string-array>
+    <string-array name="productRed">
+        <item>true</item>
+        <item>true</item>
+        <item>true</item>
+        <item>true</item>
+    </string-array>
+    <string-array name="productBlue">
+        <item>true</item>
+        <item>true</item>
+        <item>false</item>
+        <item>true</item>
     </string-array>
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
-    <string name="title_activity_catalog">Catálogo</string>
-    <string name="title_activity_product_detail">Detalles</string>
-
+    <string name="title_activity_catalog">LunarWolf Market</string>
+    <string name="title_activity_product_detail">Comprar</string>
+    <string name="actualPurchase">COMPRA ACTUAL %1$s</string>
+    <string name="extraLarge">Extra Large</string>
+    <string name="large">Large</string>
+    <string name="medium">Medium</string>
+    <string name="small">Small</string>
+    <string name="title_activity_shopping_cart">ShoppingCartActivity</string>
+    <string name="incorrectAmount">La cantidad ingresada es incorrecta</string>
+    <string name="itemAdded">Agregado</string>
+    <string name="enterAmount">Ingrese la cantidad</string>
+    <string name="accept">Aceptar</string>
+    <string name="cancel">Cancelar</string>
+    <string name="yourBrand">Tu marca de camisetas divertidas</string>
 
 </resources>

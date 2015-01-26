@@ -4,13 +4,43 @@
                 android:layout_height="match_parent"
                 tools:context="com.lunarwolf.market.view.CatalogActivity">
 
-    <GridView xmlns:android="http://schemas.android.com/apk/res/android"
-              android:id="@+id/catalogGridview"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent"
-              android:columnWidth="100dp"
-              android:numColumns="auto_fit"
-              android:stretchMode="columnWidth"
-              android:gravity="center"/>
+    <TextView
+        android:id="@+id/tittle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/yourBrand"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:textSize="@dimen/normal_text_size"
+        android:textColor="@color/black"/>
+
+    <GridView
+        android:id="@+id/catalogGridview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnWidth="100dp"
+        android:numColumns="auto_fit"
+        android:stretchMode="columnWidth"
+        android:gravity="center"
+        android:layout_below="@+id/tittle"
+        android:layout_above="@+id/layoutActualPurchase"/>
+
+    <RelativeLayout
+        android:id="@+id/layoutActualPurchase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:paddingBottom="@dimen/activity_horizontal_margin"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/actualPurchase"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/actualPurchase"
+            android:onClick="actualPurchase"/>
+
+    </RelativeLayout>
 
 </RelativeLayout>
