@@ -94,5 +94,13 @@
     <string name="accept">Aceptar</string>
     <string name="cancel">Cancelar</string>
     <string name="yourBrand">Tu marca de camisetas divertidas</string>
+    <string name="OK">OK</string>
+    <string name="title_activity_contact_form">Pedido</string>
+    <string name="contactInformation">Información de Contacto</string>
+    <string name="names">Nombres</string>
+    <string name="address">Dirección</string>
+    <string name="mobile">Teléfono celular</string>
+    <string name="email">Correo electrónico</string>
+    <string name="enviar">ENVIAR</string>
 
 </resources>
