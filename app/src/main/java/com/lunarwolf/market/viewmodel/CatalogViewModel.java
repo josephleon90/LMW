@@ -6,7 +6,7 @@ import android.util.Log;
 
 import com.lunarwolf.market.R;
 import com.lunarwolf.market.model.Cart;
-import com.lunarwolf.market.model.ItemCart;
+import com.lunarwolf.market.model.CartItem;
 import com.lunarwolf.market.model.Product;
 
 import java.io.Serializable;
@@ -116,7 +116,7 @@ public class CatalogViewModel implements Serializable {
 
   }
 
-  public void addItemToPurchase(ItemCart item) {
+  public void addItemToPurchase(CartItem item) {
     cart.addItem(item);
   }
 

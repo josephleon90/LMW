@@ -39,20 +39,19 @@ public class ProductActivity extends ActionBarActivity {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_product_detail);
     findViews();
-    viewModel = new ProductViewModel();
     Product product = getProductFromIntent();
     Cart cart = getCartFromIntent();
+    viewModel = new ProductViewModel(cart, product);
 
-    if(product != null && cart != null){
-      viewModel.setProduct(product);
+    if (product != null && cart != null) {
 
-      if(product.getColors()!= null)
-      color.setAdapter(new SpinnerColorAdapter(this,R.layout.item_color,
-              product.getColors()));
+      if (product.getColors() != null)
+        color.setAdapter(new SpinnerColorAdapter(this, R.layout.item_color,
+                product.getColors()));
 
-      if(product.getSizes()!= null)
-      size.setAdapter(new ArrayAdapter(getApplicationContext(),
-              R.layout.item_size ,product.getSizes()));
+      if (product.getSizes() != null)
+        size.setAdapter(new ArrayAdapter(getApplicationContext(),
+                R.layout.item_size, product.getSizes()));
 
       description.setText(product.getDescription());
 
@@ -65,10 +64,10 @@ public class ProductActivity extends ActionBarActivity {
       actualPurchase.setText(actualPurchaseAmount);
 
       photo.setImageResource(getResources().getIdentifier(
-                      product.getPhotoName(),
-                      "drawable",
-                      getPackageName()
-              ));
+              product.getPhotoName(),
+              "drawable",
+              getPackageName()
+      ));
     }
   }
 
@@ -87,14 +86,14 @@ public class ProductActivity extends ActionBarActivity {
     int id = item.getItemId();
 
     //noinspection SimplifiableIfStatement
-    if (id == R.id.action_settings) {
+    if (id == R.id.ok) {
       return true;
     }
 
     return super.onOptionsItemSelected(item);
   }
 
-  private void findViews(){
+  private void findViews() {
     color = (Spinner) findViewById(R.id.color);
     size = (Spinner) findViewById(R.id.size);
     description = (TextView) findViewById(R.id.description);
@@ -108,13 +107,15 @@ public class ProductActivity extends ActionBarActivity {
             .SELECTED_PRODUCT);
   }
 
-  public void addItem(View view){
+  public void addItem(View view) {
     DialogFragment newFragment = new ItemAmountFragment();
     newFragment.show(getSupportFragmentManager(), ITEM_AMOUNT_FRAGMENT_TAG);
   }
 
-  public void actualPurchase(View view){
-    startActivity(new Intent(this, ShoppingCartActivity.class));
+  public void actualPurchase(View view) {
+    Intent intent = new Intent(this, ShoppingCartActivity.class);
+    intent.putExtra(CatalogActivity.CART, viewModel.getCart());
+    startActivity(intent);
   }
 
   private Cart getCartFromIntent() {

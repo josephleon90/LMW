@@ -13,23 +13,23 @@ public class Cart implements Serializable {
   private float iva;
   private float subtotal;
   private float total;
-  private ArrayList<ItemCart> items;
+  private ArrayList<CartItem> items;
 
   public Cart() {
     items = new ArrayList<>();
   }
 
-  public void addItem(ItemCart item) {
+  public void addItem(CartItem item) {
     items.add(item);
     calculate();
   }
 
   private void calculate() {
     cleanTotals();
-    for (ItemCart itemCart : items) {
-      subtotal = subtotal + itemCart.getAmount() * itemCart.getProduct()
+    for (CartItem cartItem : items) {
+      subtotal = subtotal + cartItem.getAmount() * cartItem.getProduct()
               .getPrice();
-      iva = iva + itemCart.getProduct().getPrice() * 0.12f;
+      iva = iva + cartItem.getProduct().getPrice() * 0.12f;
     }
     Helper.round(iva);
     total = subtotal + iva;
@@ -47,7 +47,7 @@ public class Cart implements Serializable {
     return subtotal;
   }
 
-  public ArrayList<ItemCart> getItems() {
+  public ArrayList<CartItem> getItems() {
     return items;
   }
 

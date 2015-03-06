@@ -13,7 +13,7 @@ import android.widget.Button;
 import android.widget.GridView;
 
 import com.lunarwolf.market.R;
-import com.lunarwolf.market.model.ItemCart;
+import com.lunarwolf.market.model.CartItem;
 import com.lunarwolf.market.model.Product;
 import com.lunarwolf.market.util.Helper;
 import com.lunarwolf.market.view.adapter.CatalogAdapter;
@@ -80,7 +80,7 @@ public class CatalogActivity extends ActionBarActivity {
     int id = item.getItemId();
 
     //noinspection SimplifiableIfStatement
-    if (id == R.id.action_settings) {
+    if (id == R.id.ok) {
       return true;
     }
 
@@ -95,7 +95,7 @@ public class CatalogActivity extends ActionBarActivity {
     if (resultCode == Activity.RESULT_OK) {
 
       if (requestCode == ITEM_DETAIL_REQUEST) {
-        ItemCart item = (ItemCart) data.getSerializableExtra(ProductActivity
+        CartItem item = (CartItem) data.getSerializableExtra(ProductActivity
                 .ITEM);
         viewModel.addItemToPurchase(item);
       }
@@ -109,6 +109,8 @@ public class CatalogActivity extends ActionBarActivity {
   }
 
   public void actualPurchase(View view){
-    startActivity(new Intent(this, ShoppingCartActivity.class));
+    Intent intent = new Intent(this, ShoppingCartActivity.class);
+    intent.putExtra(CART, viewModel.getCart());
+    startActivity(intent);
   }
 }

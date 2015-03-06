@@ -15,7 +15,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.lunarwolf.market.R;
-import com.lunarwolf.market.model.ItemCart;
+import com.lunarwolf.market.model.CartItem;
 import com.lunarwolf.market.model.Product;
 
 /**
@@ -70,8 +70,8 @@ public class ItemAmountFragment extends DialogFragment {
         Intent intent = new Intent(act, ItemAmountFragment.class);
         Product product = act.viewModel.getProduct();
         int amountInt = Integer.parseInt(amountString);
-        ItemCart itemCart = new ItemCart(amountInt, product);
-        intent.putExtra(ProductActivity.ITEM, itemCart);
+        CartItem cartItem = new CartItem(amountInt, product);
+        intent.putExtra(ProductActivity.ITEM, cartItem);
         act.setResult(Activity.RESULT_OK, intent);
         act.finish();
 

@@ -87,7 +87,7 @@
     <string name="large">Large</string>
     <string name="medium">Medium</string>
     <string name="small">Small</string>
-    <string name="title_activity_shopping_cart">ShoppingCartActivity</string>
+    <string name="title_activity_shopping_cart">Pedido</string>
     <string name="incorrectAmount">La cantidad ingresada es incorrecta</string>
     <string name="itemAdded">Agregado</string>
     <string name="enterAmount">Ingrese la cantidad</string>
@@ -102,5 +102,9 @@
     <string name="mobile">Teléfono celular</string>
     <string name="email">Correo electrónico</string>
     <string name="enviar">ENVIAR</string>
+    <string name="theBillIs">La cuenta es</string>
+    <string name="iva12">I.V.A. 12%</string>
+    <string name="total">TOTAL</string>
+    <string name="chargeAmount">Cobrar $0.00</string>
 
 </resources>

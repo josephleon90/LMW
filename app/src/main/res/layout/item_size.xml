@@ -7,5 +7,5 @@
     android:singleLine="true"
     android:textColor="@color/black"
     android:text="Medium"
-    android:padding="@dimen/spinner_item_margin"
-    android:textSize="@dimen/normal_text_size"/>
+    android:padding="@dimen/spinnerItemMargin"
+    android:textSize="@dimen/normalTextSize"/>

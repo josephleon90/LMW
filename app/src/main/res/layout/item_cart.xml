@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingRight="@dimen/margin"
+    android:paddingLeft="@dimen/margin"
+    android:paddingBottom="@dimen/margin"
+    android:gravity="center">
+
+    <TextView
+        android:textStyle="bold"
+        android:text="Na, no te imagnas cuan largoa sdda sdka skdas"
+        android:id="@+id/name"
+        style="@style/TextViewCommom"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_width="170dp"
+        android:ellipsize="end"
+        android:maxLines="2"/>
+
+    <TextView
+        android:layout_toRightOf="@+id/name"
+        android:fontFamily="sans-serif-light"
+        android:text="x 7"
+        android:id="@+id/amount"
+        style="@style/TextViewCommom"
+        android:layout_marginLeft="12dp"/>
+
+    <TextView
+        android:textStyle="bold"
+        android:text="$0.10"
+        android:id="@+id/subtotal"
+        style="@style/TextViewCommom"
+        android:layout_alignTop="@+id/name"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"/>
+
+</RelativeLayout>
+
