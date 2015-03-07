@@ -2,7 +2,11 @@ package com.lunarwolf.market.view;
 
 import android.app.AlertDialog;
 import android.app.ProgressDialog;
+import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.AsyncTask;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
@@ -89,14 +93,18 @@ public class ContactFormActivity extends ActionBarActivity {
     progressDialog.dismiss();
   }
 
-  public void shouldSendEmail(){
+  public void shouldSendEmail() {
     String validationResult = validateForm();
-    if(validationResult.isEmpty()){
+
+    if (!validationResult.isEmpty())
+      showMessage(validationResult, getString(R.string.order));
+    else if (!isNetworkAvailable())
+      showMessage(getString(R.string.noNetwork), getString(R.string.order));
+    else {
       customer = getCustomerFromLayout();
       showProgressDialog();
       new SendEmailTask().execute(customer, cart);
-    }else
-      showMessage(validationResult, getString(R.string.order));
+    }
   }
 
   public String validateForm() {
@@ -105,13 +113,13 @@ public class ContactFormActivity extends ActionBarActivity {
     String phoneS = phone.getText().toString();
     String emailS = email.getText().toString();
 
-    if(nameS.isEmpty())
+    if (nameS.isEmpty())
       return getString(R.string.noValidName);
-    else if(addressS.isEmpty())
+    else if (addressS.isEmpty())
       return getString(R.string.noValidAddress);
-    if(phoneS.isEmpty())
+    if (phoneS.isEmpty())
       return getString(R.string.novalidPhone);
-    else if(emailS.isEmpty())
+    else if (emailS.isEmpty())
       return getString(R.string.novalidEmail);
     else return "";
   }
@@ -127,26 +135,39 @@ public class ContactFormActivity extends ActionBarActivity {
     String orderDetail = "Detalle del Pedido\n";
     String detail = "";
     for (CartItem item : cart.getItems()) {
-      String itemLine = item.getProduct().getDescription() + " x"+item.getAmount() + "\n";
+      String itemLine = item.getProduct().getDescription() + " x" + item.getAmount() + "\n";
       detail += itemLine;
     }
     orderDetail += detail;
     return customerDetail + orderDetail;
   }
 
-  public void showMessage(String message, String tittle) {
+  public void showMessage(final String message, String tittle) {
     AlertDialog.Builder builder = new AlertDialog.Builder(ContactFormActivity.this);
     builder.setTitle(tittle);
     builder.setMessage(message);
     builder.setCancelable(true);
     builder.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
       public void onClick(DialogInterface dialog, int id) {
-        dialog.cancel();
+        if (message.equals(getString(R.string.orderSentsuccessfully))) {
+          Intent i = new Intent(ContactFormActivity.this, CatalogActivity.class);
+          i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent
+                  .FLAG_ACTIVITY_CLEAR_TASK);
+          startActivity(i);
+        } else
+          dialog.cancel();
       }
     });
 
     AlertDialog alert = builder.create();
     alert.show();
+  }
+
+  private boolean isNetworkAvailable() {
+    ConnectivityManager connectivityManager
+            = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+    NetworkInfo activeNetworkInfo = connectivityManager.getActiveNetworkInfo();
+    return activeNetworkInfo != null && activeNetworkInfo.isConnected();
   }
 
   private class SendEmailTask extends AsyncTask<Object, Void, String> {
