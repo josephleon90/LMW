@@ -24,7 +24,7 @@ public class CatalogActivity extends ActionBarActivity {
 
   public static final String SELECTED_PRODUCT = "SELECTED_PRODUCT";
   public static final int ITEM_DETAIL_REQUEST = 1;
-  public static final String CART = "cart";
+  public static final String CART_EXTRA = "cart";
 
   private CatalogViewModel viewModel;
 
@@ -48,7 +48,7 @@ public class CatalogActivity extends ActionBarActivity {
                 ProductActivity.class
         );
         intent.putExtra(SELECTED_PRODUCT, (Product) v.getTag());
-        intent.putExtra(CART, viewModel.getCart());
+        intent.putExtra(CART_EXTRA, viewModel.getCart());
         startActivityForResult(intent, ITEM_DETAIL_REQUEST);
       }
     });
@@ -110,7 +110,7 @@ public class CatalogActivity extends ActionBarActivity {
 
   public void actualPurchase(View view){
     Intent intent = new Intent(this, ShoppingCartActivity.class);
-    intent.putExtra(CART, viewModel.getCart());
+    intent.putExtra(CART_EXTRA, viewModel.getCart());
     startActivity(intent);
   }
 }

@@ -106,5 +106,14 @@
     <string name="iva12">I.V.A. 12%</string>
     <string name="total">TOTAL</string>
     <string name="chargeAmount">Cobrar $0.00</string>
+    <string name="sorryOrderCouldntSend">Discúlpenos, no hemos podido enviar su pedido</string>
+    <string name="orderSentsuccessfully">Pedido enviado exitosamente!</string>
+    <string name="order">Pedido</string>
+    <string name="processing">Procesando</string>
+    <string name="pleaseWait">Por favor espere...</string>
+    <string name="noValidName">El nombre ingresado es incorrecto</string>
+    <string name="noValidAddress">La dirección ingresada es incorrecta</string>
+    <string name="novalidPhone">El teléfono ingresado es incorrecto</string>
+    <string name="novalidEmail">EL correo ingresado es incorrecto</string>
 
 </resources>

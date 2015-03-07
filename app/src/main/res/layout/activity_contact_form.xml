@@ -30,28 +30,36 @@
             android:layout_marginTop="@dimen/margin">
 
             <EditText
+                android:id="@+id/name"
                 android:textSize="@dimen/normalTextSize"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/names"
-                android:inputType="text"
+                android:inputType="textCapWords"
                 android:layout_marginTop="@dimen/margin"/>
 
             <EditText
+                android:id="@+id/address"
                 android:textSize="@dimen/normalTextSize"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/address"
-                android:layout_marginTop="@dimen/margin"/>
+                android:layout_marginTop="@dimen/margin"
+                android:inputType="textCapSentences"/>
 
             <EditText
+                android:id="@+id/phone"
                 android:textSize="@dimen/normalTextSize"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/mobile"
-                android:layout_marginTop="@dimen/margin"/>
+                android:layout_marginTop="@dimen/margin"
+                android:maxLength="10"
+                android:inputType="number"/>
 
             <EditText
+                android:id="@+id/email"
+                android:inputType="textEmailAddress"
                 android:textSize="@dimen/normalTextSize"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

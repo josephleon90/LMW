@@ -48,7 +48,9 @@ public class ShoppingCartActivity extends ActionBarActivity {
   @Override
   public boolean onOptionsItemSelected(MenuItem item) {
     if (item.getItemId() == R.id.ok) {
-      startActivity(new Intent(this, ContactFormActivity.class));
+      Intent i = new Intent(this, ContactFormActivity.class);
+      i.putExtra(CatalogActivity.CART_EXTRA, cart);
+      startActivity(i);
       return true;
     }
 
@@ -77,7 +79,7 @@ public class ShoppingCartActivity extends ActionBarActivity {
   }
 
   public Cart getCartFromIntent() {
-    return (Cart) getIntent().getSerializableExtra(CatalogActivity.CART);
+    return (Cart) getIntent().getSerializableExtra(CatalogActivity.CART_EXTRA);
   }
 
   private void showTotals(Cart cart) {

@@ -114,12 +114,12 @@ public class ProductActivity extends ActionBarActivity {
 
   public void actualPurchase(View view) {
     Intent intent = new Intent(this, ShoppingCartActivity.class);
-    intent.putExtra(CatalogActivity.CART, viewModel.getCart());
+    intent.putExtra(CatalogActivity.CART_EXTRA, viewModel.getCart());
     startActivity(intent);
   }
 
   private Cart getCartFromIntent() {
-    return (Cart) getIntent().getSerializableExtra(CatalogActivity.CART);
+    return (Cart) getIntent().getSerializableExtra(CatalogActivity.CART_EXTRA);
   }
 
 }
