@@ -1,7 +1,11 @@
 <resources>
     <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="doubleMargin">32dp</dimen>
     <dimen name="margin">16dp</dimen>
     <dimen name="bigTextSize">20sp</dimen>
     <dimen name="normalTextSize">17sp</dimen>
     <dimen name="spinnerItemMargin">7dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
 </resources>

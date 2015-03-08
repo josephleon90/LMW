@@ -12,8 +12,8 @@
         android:theme="@style/AppTheme" >
         <activity
             android:name=".view.SplashActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
-            android:screenOrientation="portrait">
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -23,13 +23,13 @@
         <activity
             android:name=".view.CatalogActivity"
             android:label="@string/title_activity_catalog"
-            android:screenOrientation="portrait">
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name=".view.ProductActivity"
             android:label="@string/title_activity_product_detail"
             android:parentActivityName=".view.CatalogActivity"
-            android:screenOrientation="portrait">
+            android:screenOrientation="portrait" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".view.CatalogActivity" />
@@ -38,7 +38,7 @@
             android:name=".view.ShoppingCartActivity"
             android:label="@string/title_activity_shopping_cart"
             android:parentActivityName=".view.ProductActivity"
-            android:screenOrientation="portrait">
+            android:screenOrientation="portrait" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.lunarwolf.market.view.ProductActivity" />
@@ -47,10 +47,14 @@
             android:name=".view.ContactFormActivity"
             android:label="@string/title_activity_contact_form"
             android:parentActivityName=".view.ShoppingCartActivity"
-            android:screenOrientation="portrait">
+            android:screenOrientation="portrait" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.lunarwolf.market.view.ShoppingCartActivity" />
+        </activity>
+        <activity
+            android:name=".view.ContactActivity"
+            android:label="@string/title_activity_contact" >
         </activity>
     </application>
 

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.lunarwolf.market.view.ContactActivity"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/margin"
+    android:paddingRight="@dimen/margin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="8dp">
+
+        <TextView
+            style="@style/TextViewCommom"
+            android:text="@string/address"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_marginLeft="15dp"
+            style="@style/TextViewCommom"
+            android:layout_width="match_parent"
+            android:text="@string/lwAddress"
+            android:gravity="right"
+            android:maxLines="2"
+            android:ellipsize="end"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="8dp">
+
+        <TextView
+            style="@style/TextViewCommom"
+            android:text="@string/telephone"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_marginLeft="15dp"
+            style="@style/TextViewCommom"
+            android:layout_width="match_parent"
+            android:text="@string/lwTelephone"
+            android:gravity="right"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="0.7dp"
+        android:background="@color/gray"/>
+
+    <LinearLayout
+        android:id="@+id/facebook"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@drawable/highlighting_white"
+        android:onClick="handleSocialNetworks"
+        android:padding="8dp">
+
+        <TextView
+            style="@style/TextViewCommom"
+            android:text="@string/facebook"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_marginLeft="15dp"
+            style="@style/TextViewCommom"
+            android:layout_width="match_parent"
+            android:text="@string/lwFabebook"
+            android:gravity="right"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/twitter"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@drawable/highlighting_white"
+        android:onClick="handleSocialNetworks"
+        android:padding="8dp">
+
+        <TextView
+            style="@style/TextViewCommom"
+            android:text="@string/twitter"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_marginLeft="15dp"
+            style="@style/TextViewCommom"
+            android:layout_width="match_parent"
+            android:text="@string/lwFabebook"
+            android:gravity="right"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/instagram"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@drawable/highlighting_white"
+        android:onClick="handleSocialNetworks"
+        android:padding="8dp">
+
+        <TextView
+            style="@style/TextViewCommom"
+            android:text="@string/instagram"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_marginLeft="15dp"
+            style="@style/TextViewCommom"
+            android:layout_width="match_parent"
+            android:text="@string/lwFabebook"
+            android:gravity="right"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

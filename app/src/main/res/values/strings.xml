@@ -116,5 +116,17 @@
     <string name="novalidPhone">El teléfono ingresado es incorrecto</string>
     <string name="novalidEmail">EL correo ingresado es incorrecto</string>
     <string name="noNetwork">No existe conección a Internet</string>
+    <string name="lwAddress">Cdla. Albornor</string>
+    <string name="telephone">Teléfono</string>
+    <string name="lwTelephone">042-323243</string>
+    <string name="facebook">Facebook</string>
+    <string name="lwFabebook">\@LunarWolf</string>
+    <string name="twitter">Twitter</string>
+    <string name="instagram">Instagram</string>
+    <string name="title_activity_contact">Contacto</string>
+    <string name="facebookPage">https://www.facebook.com/dpintadolindao</string>
+    <string name="twitterPage">https://twitter.com/almohadaso</string>
+    <string name="instagramPage">https://instagram.com/joseph.jiy/</string>
+    <string name="contact">Contacto</string>
 
 </resources>
