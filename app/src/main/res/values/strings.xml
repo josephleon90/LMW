@@ -18,17 +18,17 @@
         <item>12</item>
     </string-array>
     <string-array name="productDes" formatted="false">
-        <item>camiseta mujer 100%licra, deportiva</item>
-        <item>camiseta mujer 100%licra, sin mangas</item>
+        <item>camiseta hombre 100%licra, deportiva</item>
+        <item>camiseta hombre 100%licra, sin mangas</item>
         <item>camiseta mujer 100%licra, cuello en V</item>
-        <item>camiseta niño cuello redondo 100% algodón</item>
-        <item>camiseta niño cuello V 100% algodón</item>
-        <item>chompas con cierre sin capucha</item>
+        <item>camiseta mujer cuello redondo 100% algodón</item>
+        <item>camiseta mujer cuello V 100% algodón</item>
+        <item>chompas con capucha hombre</item>
+        <item>chompas con cierre sin capucha mujer</item>
         <item>buzos 100% algodón </item>
         <item>camisetas sin manga hombres </item>
-        <item>camisa con capucha hombre</item>
         <item>camisa sin manga con capuchas </item>
-        <item>camisas combinada en corte</item>
+        <item>gorras</item>
         <item>gorras</item>
         <item>boxer</item>
     </string-array>
@@ -41,7 +41,7 @@
         <item>15.00</item>
         <item>18.00</item>
         <item>15.00</item>
-        <item>15.00</item>
+        <item>8.00</item>
         <item>8.00</item>
         <item>8.00</item>
     </string-array>
@@ -106,19 +106,19 @@
         <item>true</item>
     </string-array>
     <string-array name="productPhotoNames">
-        <item>cam_7</item>
-        <item>cam_8</item>
-        <item>cam_9</item>
         <item>cam_1</item>
-        <item>cam_2</item>
-        <item>cho_1</item>
-        <item>buz_1</item>
-        <item>cam_3</item>
-        <item>cho_2</item>
-        <item>cam_4</item>
-        <item>cam_5</item>
-        <item>gor_1</item>
-        <item>box_1</item>
+        <item>cam_6</item>
+        <item>cam_7</item>
+        <item>cam_12</item>
+        <item>cam_13</item>
+        <item>cho_4</item>
+        <item>cho_7</item>
+        <item>buz_2</item>
+        <item>buz_6</item>
+        <item>buz_10</item>
+        <item>gor_3</item>
+        <item>gor_5</item>
+        <item>box_9</item>
     </string-array>
     <string-array name="productBlack">
         <item>true</item>
