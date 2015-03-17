@@ -16,6 +16,7 @@
         <item>10</item>
         <item>11</item>
         <item>12</item>
+        <item>13</item>
     </string-array>
     <string-array name="productDes" formatted="false">
         <item>camiseta hombre 100%licra, deportiva</item>
@@ -38,6 +39,8 @@
         <item>14.00</item>
         <item>12.00</item>
         <item>22.00</item>
+        <item>15.00</item>
+        <item>18.00</item>
         <item>15.00</item>
         <item>18.00</item>
         <item>15.00</item>
