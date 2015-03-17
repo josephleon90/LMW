@@ -12,7 +12,7 @@
             android:id="@+id/photo"
             android:layout_width="match_parent"
             android:layout_height="280dp"
-            android:src="@drawable/sample_0"
+            android:src="@drawable/cho_1"
             android:scaleType="fitXY"/>
 
         <TextView

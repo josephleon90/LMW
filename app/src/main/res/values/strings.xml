@@ -8,58 +8,128 @@
         <item>2</item>
         <item>3</item>
         <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
     </string-array>
     <string-array name="productDes" formatted="false">
-        <item>Camiseta 100% algodón semipeinado en punto liso, pre-econgido. Pigmentos ecológicos. 160gr/m2.</item>
-        <item>Camiseta 50% algodón 50% Poliester semipeinado en punto liso,pre-econgido. Pigmentos ecológicos. 100gr/m2.</item>
-        <item>Camiseta 100% pre-econgido. Pigmentos ecológicos. 90gr/m2</item>
-        <item>Chompa 100% lana, pre-econgido.Pigmentos naturales. 160gr/m2.</item>
+        <item>camiseta mujer 100%licra, deportiva</item>
+        <item>camiseta mujer 100%licra, sin mangas</item>
+        <item>camiseta mujer 100%licra, cuello en V</item>
+        <item>camiseta niño cuello redondo 100% algodón</item>
+        <item>camiseta niño cuello V 100% algodón</item>
+        <item>chompas con cierre sin capucha</item>
+        <item>buzos 100% algodón </item>
+        <item>camisetas sin manga hombres </item>
+        <item>camisa con capucha hombre</item>
+        <item>camisa sin manga con capuchas </item>
+        <item>camisas combinada en corte</item>
+        <item>gorras</item>
+        <item>boxer</item>
     </string-array>
     <string-array name="productPrices">
-        <item>24.00</item>
+        <item>15.00</item>
+        <item>14.00</item>
+        <item>14.00</item>
+        <item>12.00</item>
         <item>22.00</item>
-        <item>35.00</item>
-        <item>20.00</item>
+        <item>15.00</item>
+        <item>18.00</item>
+        <item>15.00</item>
+        <item>15.00</item>
+        <item>8.00</item>
+        <item>8.00</item>
     </string-array>
     <string-array name="productSmallSizes">
         <item>true</item>
         <item>true</item>
-        <item>false</item>
+        <item>true</item>
+        <item>true</item>
+        <item>true</item>
+        <item>true</item>
+        <item>true</item>
+        <item>true</item>
+        <item>true</item>
+        <item>true</item>
+        <item>true</item>
+        <item>true</item>
         <item>true</item>
     </string-array>
     <string-array name="productMediumSizes">
         <item>true</item>
-        <item>false</item>
-        <item>false</item>
+        <item>true</item>
+        <item>true</item>
+        <item>true</item>
+        <item>true</item>
+        <item>true</item>
+        <item>true</item>
+        <item>true</item>
+        <item>true</item>
+        <item>true</item>
+        <item>true</item>
+        <item>true</item>
         <item>true</item>
     </string-array>
     <string-array name="productLargeSizes">
         <item>true</item>
-        <item>false</item>
+        <item>true</item>
+        <item>true</item>
+        <item>true</item>
+        <item>true</item>
+        <item>true</item>
+        <item>true</item>
+        <item>true</item>
+        <item>true</item>
+        <item>true</item>
+        <item>true</item>
         <item>true</item>
         <item>true</item>
     </string-array>
     <string-array name="productExtraLargeSizes">
         <item>true</item>
-        <item>false</item>
-        <item>false</item>
+        <item>true</item>
+        <item>true</item>
+        <item>true</item>
+        <item>true</item>
+        <item>true</item>
+        <item>true</item>
+        <item>true</item>
+        <item>true</item>
+        <item>true</item>
+        <item>true</item>
+        <item>true</item>
         <item>true</item>
     </string-array>
     <string-array name="productPhotoNames">
-        <item>sample_0</item>
-        <item>sample_1</item>
-        <item>sample_7</item>
-        <item>sample_3</item>
-        <item>sample_2</item>
-        <item>sample_4</item>
-        <item>sample_5</item>
-        <item>sample_6</item>
-        <item>sample_0</item>
-        <item>sample_1</item>
-        <item>sample_7</item>
-        <item>sample_3</item>
+        <item>cam_7</item>
+        <item>cam_8</item>
+        <item>cam_9</item>
+        <item>cam_1</item>
+        <item>cam_2</item>
+        <item>cho_1</item>
+        <item>buz_1</item>
+        <item>cam_3</item>
+        <item>cho_2</item>
+        <item>cam_4</item>
+        <item>cam_5</item>
+        <item>gor_1</item>
+        <item>box_1</item>
     </string-array>
     <string-array name="productBlack">
+        <item>true</item>
+        <item>true</item>
+        <item>true</item>
+        <item>true</item>
+        <item>true</item>
+        <item>true</item>
+        <item>true</item>
+        <item>true</item>
+        <item>true</item>
         <item>true</item>
         <item>true</item>
         <item>true</item>
@@ -70,11 +140,29 @@
         <item>true</item>
         <item>true</item>
         <item>true</item>
+        <item>true</item>
+        <item>true</item>
+        <item>true</item>
+        <item>true</item>
+        <item>true</item>
+        <item>true</item>
+        <item>true</item>
+        <item>true</item>
+        <item>true</item>
     </string-array>
     <string-array name="productBlue">
         <item>true</item>
         <item>true</item>
-        <item>false</item>
+        <item>true</item>
+        <item>true</item>
+        <item>true</item>
+        <item>true</item>
+        <item>true</item>
+        <item>true</item>
+        <item>true</item>
+        <item>true</item>
+        <item>true</item>
+        <item>true</item>
         <item>true</item>
     </string-array>
 
@@ -124,7 +212,7 @@
     <string name="twitter">Twitter</string>
     <string name="instagram">Instagram</string>
     <string name="title_activity_contact">Contacto</string>
-    <string name="facebookPage">https://www.facebook.com/dpintadolindao</string>
+    <string name="facebookPage">https://www.facebook.com/pages/LUNAR-WOLF/714538508662025?fref=ts</string>
     <string name="twitterPage">https://twitter.com/almohadaso</string>
     <string name="instagramPage">https://instagram.com/joseph.jiy/</string>
     <string name="contact">Contacto</string>

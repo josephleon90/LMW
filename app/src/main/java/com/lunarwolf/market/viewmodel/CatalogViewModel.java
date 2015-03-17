@@ -57,6 +57,7 @@ public class CatalogViewModel implements Serializable {
     color3 = rs.getStringArray(R.array.productRed);
 
     for (int i = 0; i < photos.length; i++) {
+//    for (int i = 0; i < 1; i++) {
 
       try {
 //      Get colors of product on array

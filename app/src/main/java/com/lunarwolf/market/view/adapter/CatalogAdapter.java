@@ -57,7 +57,13 @@ public class CatalogAdapter extends BaseAdapter {
                     "drawable",
                     mContext.getPackageName()
             );
-    imageView.setImageResource(idPhoto);
+
+    try {
+      imageView.setImageResource(idPhoto);
+    } catch (Exception e) {
+      e.printStackTrace();
+    }
+
     imageView.setTag(product);
     return imageView;
   }
